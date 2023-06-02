@@ -34,14 +34,11 @@ return '';
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-  ${renderLicenseBadge(data.license)}
+  const licenseBadge = renderLicenseBadge(data.license);
+  const licenseSection = renderLicenseSection(data.license);
 
-  ## Description
-  
-  ${data.description}
-  
-  ${renderLicenseSection(data.license)}
+  return `# ${data.title}
+
 `;
 }
 

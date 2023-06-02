@@ -16,15 +16,27 @@ const questions = [{
     type: 'input',
     message: 'What are the installation instructions for your project?',
     name: 'installation',
-  },];
+  },
+    {
+        type:'input',
+        message:'What is your Github username ?',
+        name:'username',
+    },
+    {
+        type:'input',
+        message:'What is your email ?',
+        name:'email',
+    }];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {fs.writeFile(fileName, data, (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      console.log(`README file "${fileName}" has been created.`);
-    }
+function writeToFile(fileName, data) {const content = JSON.stringify(data, null, 2); 
+
+fs.writeFile(fileName, content, (err) => {
+  if (err) {
+    console.error(err);
+  } else {
+    console.log(`README file "${fileName}" has been created.`);
+  }
   });
 }
 

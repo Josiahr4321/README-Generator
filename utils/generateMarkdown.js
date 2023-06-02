@@ -38,7 +38,13 @@ function generateMarkdown(data) {
   const licenseSection = renderLicenseSection(data.license);
 
   return `# ${data.title}
+  ${licenseBadge}
 
+  ## Description
+  
+  ${data.description}
+  
+  ${licenseSection}
 `;
 }
 

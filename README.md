@@ -5,20 +5,16 @@ This is a simple command-line application that generates a README file based on 
 Prerequisites
 Before running this application, make sure you have the following packages installed:
 
-fs: A built-in Node.js module for file system operations.
-inquirer: A Node.js package for collecting user input from the command line.
-To install the required packages, you can use the following command:
+Used inquirer: A Node.js package for collecting user input from the command line.
 
-shell
-Copy code
-npm install fs inquirer
-Usage
-To run the application, navigate to the project directory and execute the following command:
+Used npm install fs inquirer
 
-shell
-Copy code
-node index.js
-You will be prompted with a series of questions to provide information about your project. Answer each question and press Enter to proceed to the next one.
+It was used to run the application, navigate to the project directory and execute the following command:
+
+
+To use type node index.js in the terminal
+
+Then you will be prompted with a series of questions to provide information about your project. Answer each question and press Enter to proceed to the next one.
 
 Once you have answered all the questions, the application will generate a README.md file based on your input.
 
